@@ -50,4 +50,6 @@ natas3.natas.labs.overthewire.org/s3cr3t/
 Bingo ! **users.txt** est ici ! On obtient les identifiants:
 > natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
 
+---
+
 Mot de passe: **Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ**
