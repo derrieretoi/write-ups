@@ -18,7 +18,7 @@ Structure de la command pour changer de referer: **curl --referer http:/referer-
 **Fusionnons les deux**:
 > curl -u username:password http://target-address/ --referer http://referer-address/ http://target-address/
 
-Dans notre cas, la commande exacte est:  
+**Enfin, dans notre cas, la commande exacte est**:  
 > curl -u natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ --referer http://natas5.natas.labs.overthewire.org/ http://natas4.natas.labs.overthewire.org/
 
 ---
