@@ -9,11 +9,11 @@ On va donc **changer notre referer**, une en-tête de requette HTTP qui informe 
 
 Je vais utiliser une commande **cUrl** qui va se connecter à la page en changeant le *referer* pour moi:
 
-*Structure de la commande pour se connecter à la page: **curl -u username:password http://target-address/**  
-Ici cUrl renvoie la même erreur que sur le navigateur, puisque le referer n'a pas été changé. On s'est juste identifié.
+Structure de la commande pour se connecter à la page: **curl -u username:password http://target-address/**  
+*Ici cUrl renvoie la même erreur que sur le navigateur, puisque le referer n'a pas été changé. On s'est juste identifié.*
 
 Structure de la command pour changer de referer: **curl --referer http:/referer-adress/ http://target-address**  
-Ici cUrl envoie une requête en informant http://target-address/ que l'on provient de http://referer-address/*
+*Ici cUrl envoie une requête en informant http://target-address/ que l'on provient de http://referer-address/*
 
 **Fusionnons les deux**:
 > curl -u username:password http://target-address/ --referer http://referer-address/ http://target-address/
