@@ -28,7 +28,7 @@ On va donc récupérer le fichier secret.inc qui se trouve dans le dossier /incl
 
 Pour cela j'utilise **wget** :
 
-Structure de la commande pour récupérer un fichier: `wget http://target-address/file`
+Structure de la commande pour récupérer un fichier: `wget http://target-address/file`  
 Structure de la commande pour se connecter avec des identifiants: `wget --user [username] --password [password]`
 
 **Fusionnons les deux**:  
