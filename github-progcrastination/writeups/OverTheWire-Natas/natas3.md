@@ -26,8 +26,8 @@ There is nothing on this page
 </body></html>
 ```
 
-On trouve ce commentaire :
-*<!-- No more information leaks!! Not even Google will find it this time... -->*
+On trouve ce commentaire :  
+`<!-- No more information leaks!! Not even Google will find it this time... -->`  
 *//Plus de fuites d'informations ! Même Google ne le trouvera pas cette fois ci...*
 
 Indice : Indexation Google > robots.txt
@@ -35,7 +35,7 @@ Indice : Indexation Google > robots.txt
 ---
 #### Etape 2
 
-On regarde le robots.txt du site:
+On regarde le robots.txt du site:  
 http://natas3.natas.labs.overthewire.org/robots.txt
 
 On obtient:
@@ -47,10 +47,10 @@ Encore un indice > On doit se rendre dans le dossier /s3cr3t/
 ---
 #### Etape 3
 
-Allons dans le dossier:
+Allons dans le dossier:  
 natas3.natas.labs.overthewire.org/s3cr3t/
 
-Bingo ! **users.txt** est ici ! On obtient les identifiants:
+Bingo ! **users.txt** est ici ! On obtient les identifiants:  
 > natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
 
 ---
