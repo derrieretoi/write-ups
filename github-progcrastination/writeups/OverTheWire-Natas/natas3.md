@@ -1,6 +1,7 @@
 ## Over-The-Wire -writeup-
 ### Natas3 (http://natas3.natas.labs.overthewire.org/)
 
+---
 #### Etape 1
 
 "Il n'y a rien sur cette page" encore. On inspecte le code source (Ctrl+U):
@@ -31,6 +32,7 @@ On trouve ce commentaire :
 
 Indice : Indexation Google > robots.txt
 
+---
 #### Etape 2
 
 On regarde le robots.txt du site:
@@ -42,6 +44,7 @@ On obtient:
 
 Encore un indice > On doit se rendre dans le dossier /s3cr3t/
 
+---
 #### Etape 3
 
 Allons dans le dossier:
