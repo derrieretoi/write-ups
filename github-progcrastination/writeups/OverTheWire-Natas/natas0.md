@@ -1,6 +1,7 @@
 ## Over-The-Wire -writeup-
 ### Natas0 (http://natas0.natas.labs.overthewire.org/)
 
+---
 #### Etape 1
 
 On inspecte le code source Ctrl+U:
@@ -27,4 +28,5 @@ You can find the password for the next level on this page.
 </html>
 ```
 
+---
 Mot de passe: **gtVrDuiDfck831PqWsLEZy5gyDz1clto**
