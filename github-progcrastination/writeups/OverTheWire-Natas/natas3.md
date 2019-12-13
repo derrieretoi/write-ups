@@ -48,7 +48,7 @@ Encore un indice > On doit se rendre dans le dossier /s3cr3t/
 #### Etape 3
 
 Allons dans le dossier:  
-natas3.natas.labs.overthewire.org/s3cr3t/
+http://natas3.natas.labs.overthewire.org/s3cr3t/
 
 Bingo ! **users.txt** est ici ! On obtient les identifiants:  
 > natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
