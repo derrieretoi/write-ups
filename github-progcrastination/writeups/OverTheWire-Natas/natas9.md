@@ -21,8 +21,7 @@ if($key != "") {
 ?>
 ```
 
-**On sait aussi que les mots de passes sont stockés dans /etc/natas_webpass/**, et la ligne de recherche dans le dictionnaire est vulnérable:
-> passthru("grep -i $key dictionary.txt");
+**On sait aussi que les mots de passes sont stockés dans /etc/natas_webpass/**, et la ligne de recherche dans le dictionnaire est vulnérable: `passthru("grep -i $key dictionary.txt");`
 
 Il suffit de remplacer la variable $key par ";" pour terminer la ligne, et à la suite une commande qui nous permettrais de voir le contenu de *webpass*:
 
