@@ -4,21 +4,21 @@
 ---
 #### Etape 1
 
-"Accès refusé, vous visitez le site depuis "..", et les utilisateurs authorisés doivent venir depuis "http://natas5.natas.labs.overthewire.org/"
+"Accès refusé, vous visitez le site depuis "..", et les utilisateurs authorisés doivent venir depuis "http://natas5.natas.labs.overthewire.org/"  
 On va donc **changer notre referer**, une en-tête de requette HTTP qui informe les sites de la provenance des utilisateurs (d'où ils viennent, de quel lien), par le lien demandé.
 
 Je vais utiliser une commande **cUrl** qui va se connecter à la page en changeant le *referer* pour moi:
 
-*Structure de la commande pour se connecter à la page: **curl -u username:password http://target-address/**
+*Structure de la commande pour se connecter à la page: **curl -u username:password http://target-address/**  
 Ici cUrl renvoie la même erreur que sur le navigateur, puisque le referer n'a pas été changé. On s'est juste identifié.
 
-Structure de la command pour changer de referer: **curl --referer http:/referer-adress/ http://target-address**
+Structure de la command pour changer de referer: **curl --referer http:/referer-adress/ http://target-address**  
 Ici cUrl envoie une requête en informant http://target-address/ que l'on provient de http://referer-address/*
 
 **Fusionnons les deux**:
 > curl -u username:password http://target-address/ --referer http://referer-address/ http://target-address/
 
-Dans notre cas, la commande exacte est:
+Dans notre cas, la commande exacte est:  
 > curl -u natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ --referer http://natas5.natas.labs.overthewire.org/ http://natas4.natas.labs.overthewire.org/
 
 ---
