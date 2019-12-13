@@ -49,7 +49,7 @@ $secret = "FOEIUWGHFEEUHOFUOIU";
 Le code a rentrer dans le box d'input est donc **FOEIUWGHFEEUHOFUOIU**, qui se comparera à lui-même, sera donc égal à lui-même et satisfiera la condition pour dévoiler la balise "*censored*".
 
 Une fois le code rentré et le bouton "Sumbit Query" cliqué, un texte apparaît:
-`Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9`
+> Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
 
 ---
 Mot de passe: **7z3hEENjQtflzgnT29q7wAvMNfZdh0i9**
