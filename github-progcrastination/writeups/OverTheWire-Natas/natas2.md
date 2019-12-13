@@ -1,7 +1,7 @@
 ## Over-The-Wire -writeup-
 ### Natas2 (http://natas2.natas.labs.overthewire.org/)
 
-#### Step 1
+#### Etape 1
 
 "Il n'y a rien sur cette page."
 
@@ -31,6 +31,8 @@ On trouve:
 <img src="files/pixel.png">
 ```
 *Une image dans files/ ?*
+
+#### Etape 2
 
 On se rend donc dans http://natas2.natas.labs.overthewire.org/files/
 
