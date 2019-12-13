@@ -28,14 +28,14 @@ On va donc récupérer le fichier secret.inc qui se trouve dans le dossier /incl
 
 Pour cela j'utilise **wget** :
 
-Structure de la commande pour récupérer un fichier: **wget http://target-address/file**
-Structure de la commande pour se connecter avec des identifiants: **wget --user [username] --password [password]**
+Structure de la commande pour récupérer un fichier: `wget http://target-address/file`
+Structure de la commande pour se connecter avec des identifiants: `wget --user [username] --password [password]`
 
 **Fusionnons les deux**:  
-> wget -user [username] --password [password] http://target-address/file
+`wget -user [username] --password [password] http://target-address/file`
 
 **Enfin, dans notre cas, la commande exacte est**:  
-> wget --user natas6 --password aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1 http://natas6.natas.labs.overthewire.org/includes/secret.inc
+`wget --user natas6 --password aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1 http://natas6.natas.labs.overthewire.org/includes/secret.inc`
 
 ---
 #### Etape 2
@@ -49,7 +49,7 @@ $secret = "FOEIUWGHFEEUHOFUOIU";
 Le code a rentrer dans le box d'input est donc **FOEIUWGHFEEUHOFUOIU**, qui se comparera à lui-même, sera donc égal à lui-même et satisfiera la condition pour dévoiler la balise "*censored*".
 
 Une fois le code rentré et le bouton "Sumbit Query" cliqué, un texte apparaît:
-> Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+`Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9`
 
 ---
 Mot de passe: **7z3hEENjQtflzgnT29q7wAvMNfZdh0i9**
