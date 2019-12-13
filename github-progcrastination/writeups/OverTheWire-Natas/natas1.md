@@ -1,6 +1,7 @@
 ## Over-The-Wire -writeup-
 ### Natas1 (http://natas1.natas.labs.overthewire.org/)
 
+---
 #### Etape 1
 
 "Clic droit bloqué", mais on peut quand même inspecter le code source (Ctrl+U):
@@ -28,4 +29,5 @@ next level on this page, but rightclicking has been blocked!
 </html>
 ```
 
+---
 Mot de passe: **ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi**
