@@ -7,6 +7,7 @@
 On a un box de recherche qui, d'après le sourcecode mis à disposition, cherche chaque mot contenant l'input de l'utilisateur dans un dictionnaire.txt
 
 Voici la fonction php:
+
 ```php
 <?
 $key = "";
@@ -41,8 +42,4 @@ Et si on rentre `; type /etc/natas_webpass/natas10"`, on trouve que le fichier n
 Il suffit de rentrer `; cat /etc/natas_webpass/natas10"` pour voir à quoi ressemble le fichier, et après avoir fait ça la page renvoie: nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu.
 
 ---
-<details>
-    <summary>Mot de passe:</summary>
-    
-    **nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu**
-</details>
+Mot de passe: **nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu**
