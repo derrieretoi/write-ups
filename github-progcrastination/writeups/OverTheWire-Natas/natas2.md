@@ -27,10 +27,8 @@ There is nothing on this page
 </div>
 </body></html>
 ```
-On trouve:
-```html
-<img src="files/pixel.png">
-```
+On trouve: `<img src="files/pixel.png">`
+
 *Une image dans files/ ?*
 
 ---
