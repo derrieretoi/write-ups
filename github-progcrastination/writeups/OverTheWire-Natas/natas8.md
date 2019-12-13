@@ -30,7 +30,7 @@ Ici, il faut que la clé encryptée ($encodedSecret, de valeur 3d3d516343746d4d6
 **L'input de l'utilisateur va être**:
 - 1: Encodé en Base64
 - 2: Inversé
-- 3: Converti en représentation hexadécimale (depuis données binaires)
+- 3: Converti en représentation hexadécimale (depuis données binaires)  
 *La ligne qui effectue ces manipulations: return bin2hex(strrev(base64_encode($secret)));*
 
 ---
