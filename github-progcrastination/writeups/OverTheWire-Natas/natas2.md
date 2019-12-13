@@ -1,6 +1,7 @@
 ## Over-The-Wire -writeup-
 ### Natas2 (http://natas2.natas.labs.overthewire.org/)
 
+---
 #### Etape 1
 
 "Il n'y a rien sur cette page."
@@ -32,6 +33,7 @@ On trouve:
 ```
 *Une image dans files/ ?*
 
+---
 #### Etape 2
 
 On se rend donc dans http://natas2.natas.labs.overthewire.org/files/
@@ -48,4 +50,5 @@ eve:zo4mJWyNj2
 mallory:9urtcpzBmH
 ```
 
+---
 Mot de passe: **sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14**
