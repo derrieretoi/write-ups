@@ -9,7 +9,7 @@ Le code source ne contient aucune information.
 On doit vérifier les cookies:  
 
 On ouvre les *outils de développement* (Ctrl+Shift+I) et on se rend dans l'onglet *Stockage*:
-> **Cookies** -> loggedIn = 0
+> **Cookies**: loggedIn = 0
 
 Il suffit donc de changer la valeur à 1, et de recharger la page.  
 Un autre texte s'affiche:  
