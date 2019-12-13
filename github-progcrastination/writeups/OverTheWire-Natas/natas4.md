@@ -1,5 +1,5 @@
 ## Over-The-Wire -writeup-
-### Natas3 (http://natas3.natas.labs.overthewire.org/)
+### Natas4 (http://natas4.natas.labs.overthewire.org/)
 
 ---
 #### Etape 1
