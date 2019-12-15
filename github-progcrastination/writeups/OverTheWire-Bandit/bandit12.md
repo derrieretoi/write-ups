@@ -70,5 +70,55 @@ Encore compressé en **gzip**, on continue les pipes:
 bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat |file -
 /dev/stdin: POSIX tar archive (GNU)
 ```
-Cette fois ci on tombe sur une archive **tar**. Et nous avons de la chance, on peut décompresser les fichiers **tar** avec des arguments qui renvoient l'output
+Cette fois ci on tombe sur une archive **tar**. Et nous avons de la chance, on peut décompresser les fichiers **tar** avec des arguments qui renvoient l'output décompressé: **-x** et **-O**:
+
+---
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | file -
+/dev/stdin: POSIX tar archive (GNU)
+```
+
+Encore une archive **tar**, on continue:
+
+---
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | tar xO | file -
+/dev/stdin: bzip2 compressed data, block size = 900k
+```
+
+et encore:
+
+---
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | tar xO | bzcat | file -
+/dev/stdin: POSIX tar archive (GNU)
+```
+
+et encore...:
+
+---
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | file -
+/dev/stdin: gzip compressed data, was "data9.bin", last modified: Tue Oct 16 12:00:23 2018, max compression, from Unix
+```
+
+et toujours:
+
+---
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat | file -
+/dev/stdin: ASCII text
+```
+
+et enfin !  
+Il suffit d'enlever `file -` de la commande pour avoir le résultat final de toute ces décompressions:
+
+```console
+bandit12@bandit:/tmp/visages$ zcat output.bin | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat
+The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+```
+
+---
+Mot de passe: **8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL**
+
 
