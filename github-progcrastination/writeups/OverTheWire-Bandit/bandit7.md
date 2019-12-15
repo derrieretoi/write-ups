@@ -6,7 +6,7 @@
 
 Le mot de passe se trouve dans le fichier **data.txt**, à côté du mot **millionth**.  
 Regardons déjà comment se compose le fichier *data.txt*:
-```
+```sh
 bandit7@bandit:~$ cat data.txt |head
 humiliation's	47r0YuNylaQ3k6HqGF5NsPPiGuolDCjn
 malarkey's	0huyJeRwvtJaoyRmJjQFsRnQcYG4gDir
