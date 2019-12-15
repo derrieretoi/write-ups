@@ -17,10 +17,11 @@ Il va donc falloir trouver lequel de ces fichiers contient une ligne avec **uniq
 Pour cela on utilise **grep**:
 `grep -x ".*" ./-file0*`
 
-Essayons de comprendre:  
+---
+***Essayons de comprendre***:  
 `grep -x` signifie *--line-regexp*, qui va trouver les correspondances exactes dans une ligne complète, et l'argument `".*"` signifie littéralement *tous les caractères*, soit les caractères encodés en UTF-8.  
 
-On demande donc à grep de trouver une ligne complète de caractères valides dans les fichiers `./-file0*`, c'est à dire tout les fichiers qui commencent par **file0** (car on utilise une *wildcard* (le caractère *****)).
+On demande donc à grep de trouver une ligne complète de caractères valides dans les fichiers `./-file0*`, c'est à dire tout les fichiers qui commencent par **file0** (car on utilise une *wildcard* (le caractère *)).
 
 `grep -x ".*" ./-file0*` nous retourne donc:
 > ./-file07:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
