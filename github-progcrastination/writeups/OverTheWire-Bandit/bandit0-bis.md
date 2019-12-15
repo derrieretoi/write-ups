@@ -1,5 +1,5 @@
 ## Over-The-Wire -writeup-
-### Bandit0-bis
+### Bandit0-bis (bandit0@bandit.labs.overthewire.org)
 
 ---
 #### Etape 1
