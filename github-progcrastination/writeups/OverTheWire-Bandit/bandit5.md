@@ -6,7 +6,7 @@
 
 On se retrouve avec de nombreux dossiers dans lesquels se trouvent de nombreux fichiers, certains executables, d'autres non, parfois nommés différement...
 <details>
-<summary>/Voir le log complet de `find .`</summary>
+<summary>/Voir le log complet de 'find .'/</summary>
 ./maybehere09
 ./maybehere09/.file2
 ./maybehere09/.file1
@@ -208,3 +208,26 @@ On se retrouve avec de nombreux dossiers dans lesquels se trouvent de nombreux f
 ./maybehere05/spaces file1
 ./maybehere05/.file3
 </details>
+
+On sait également que **le fichier qui contient le mot de passe a des critères précis**:
+- Lisible par un humain
+- Taille: 1033 bytes
+- Non-executable
+
+---
+#### Etape 2
+
+Utilisons `find` et quelques uns de ses arguments pour trouver facilement le fichier correct:
+La commande `find . -type f -size 1033c ! -executable` demande le `type` > fichier, la taille `size` > 1033 bytes, et que le fichier soit `! -executable` > non-executable *(Négation: '!')*
+
+`find . -type f -size 1033c ! -executable` nous renvoie:
+> ./maybehere07/.file2
+
+---
+#### Etape 3
+
+`cat ./maybehere07/.file2` renvoie:
+> DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+---
+Mot de passe: **DXjZPULLxYr17uwoI01bNLQbtFemEgo7**
