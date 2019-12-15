@@ -31,7 +31,7 @@ Il va donc falloir *trier*, puis *dédoublonner* les lignes, avec **sort** et **
 
 On *pipe* donc ces deux commandes:
 ```console
-bandit8@bandit:~$ sort data.txt | uniq -u
+bandit8@bandit:~$ sort data.txt |uniq -u
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 ```
 
