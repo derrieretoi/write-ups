@@ -4,9 +4,9 @@
 ---
 #### Etape 1
 
-Trouver le readme qui contient le **mot de passe pour se connecter à bandit1** avec SSH:
+Il faut trouver le readme qui contient le **mot de passe pour se connecter à bandit1** avec SSH:
 
-`ls` révèle un *readme*, et `cat readme` nous renvoie:
+Nous sommes dans le répertoire home, et `ls` révèle un *readme*. En faisant `cat readme`, on obtient:
 > boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
 ---
