@@ -6,7 +6,8 @@
 
 Le mot de passe se trouve dans le fichier **data.txt**, à côté du mot **millionth**.  
 Regardons déjà comment se compose le fichier *data.txt*:
-```sh
+
+```console
 bandit7@bandit:~$ cat data.txt |head
 humiliation's	47r0YuNylaQ3k6HqGF5NsPPiGuolDCjn
 malarkey's	0huyJeRwvtJaoyRmJjQFsRnQcYG4gDir
@@ -19,3 +20,17 @@ rump's	nFY7k2ua3xfV5oScoBQsPhrwKjeKVwam
 rink's	vzsUxoBeDiy7wo7SW1CnXZUYEOIUuoiw
 sierras	fUB5nuau8pLD55Wi4u6R8x4SDxqBUXfd
 ```
+
+---
+#### Etape 2
+
+Utilisons **grep** pour trouver le mot **millionth** et ce qui suit:
+`grep "millionth.*"` va chercher le mot *millionth*, puis n'importe quel caractère après ça, dans la ligne.
+
+```console
+bandit7@bandit:~$ cat data.txt |grep "millionth.*"
+millionth	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+```
+
+---
+Mot de passe: **cvX2JJa4CFALtqS87jk27qwqGhBM9plV**
