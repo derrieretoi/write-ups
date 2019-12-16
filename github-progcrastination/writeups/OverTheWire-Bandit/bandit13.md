@@ -20,7 +20,7 @@ Are you sure you want to continue connecting (yes/no)?
 On confirme, et nous voilà connecté en tant que **bandit14**.
 
 ---
-#### Etape 2
+#### Etape 2
 
 Il ne nous reste plus qu'à aller chercher le mot de passe:
 ```console
