@@ -39,7 +39,7 @@ Le script va dans le répertoire `/var/spool/bandit24` car la variable `myname` 
 Ensuite, comme le dit la ligne *echo*, le script exécute chaque scripts dans le dossier en question, puis les supprimes.
 
 ---
-#### Etape 2
+#### Etape 2
 
 Il va falloit créer un script dans `/var/spool/bandit24`, qui du coup sera exécuté avec les privilèges de **bandit24**, nous permettant de récupérer son mot de passe.  
 On se place dans un dossier temporaire, et on **crée notre script** ainsi qu'un fichier vide qui recevra le mot de passe:
@@ -67,7 +67,7 @@ La tâche automatique va exécuter tout les scripts sous `var/spool/bandit24` en
 Notre script demandera alors d'afficher le mot de passe de **bandit24**, et de le rediriger dans notre fichier /tmp/visages/**output** !
 
 ---
-#### Etape 4
+#### Etape 4
 
 Maintenant il faut **rendre notre script, et notre fichier output exécutables !**. Sinon **bandit24** ne pourra pas exécuter / écrire dans nos fihchiers.  
 Pour cela, on utilise `chmod`:
