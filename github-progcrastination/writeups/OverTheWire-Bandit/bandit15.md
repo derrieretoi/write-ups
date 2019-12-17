@@ -9,8 +9,6 @@ Dans ce niveau il faut envoyer le mot de passe du niveau actuel, mais cette fois
 L'encryption SSL réfère à l'utilisation d'**OpenSSL**. Pour se connecter, on utilise la commande `openssl s_client -connect [host]:[port]`.
 
 Ici, la commande à éxecuter est: `ssl s_client -connect localhost:30001`, qui nous renvoie ensuite tout les détails de la connection:
-<detais>
-<summary>/Voir le log/</summary>
 
 ```console
  bandit15@bandit:~$ openssl s_client -connect localhost:30001
@@ -83,4 +81,19 @@ Ici, la commande à éxecuter est: `ssl s_client -connect localhost:30001`, qui 
      Extended master secret: yes
  ---
  ```
-</details>
+ 
+ ---
+ #### Etape 2
+ 
+ Envoyons le mot de passe:
+ 
+ ```console
+ BfMYroe26WYalil77FoDi9qh59eK5xNr
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+closed
+```
+
+---
+Mot de passe: **cluFn7wTiGryunymYOu4RcffSxQluehd**
