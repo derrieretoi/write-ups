@@ -5,7 +5,7 @@
 #### Etape 1
 
 Encore une fois, une tâche automatisée est éxécutée par **cron** dans `/etc/cron.d`, et il faut examiner tout ça de plus près.  
-`/etc/con.d` contient un fichier `cronjob_bandit23`, regardons le de plus près:
+`/etc/cron.d` contient un fichier `cronjob_bandit23`, regardons le de plus près:
 
 ```console
 bandit22@bandit:/etc/cron.d$ cat cronjob_bandit23 
@@ -64,12 +64,39 @@ bandit22@bandit:/etc/cron.d$ /usr/bin/cronjob_bandit23.sh
 Copying passwordfile /etc/bandit_pass/bandit22 to /tmp/8169b67bd894ddbb4412f91573b38db3
 ```
 
-et regarder le résultat:
+---
+#### Etape 3
+
+Il faut désormais exécuter ce programme, mais **en tant que bandit23 !**
+Jusque là, notre `whoami` nous renvoyait `bandit22`, puisque nous sommes encore **bandit22**.
+
+On va donc attribuer à la variable `myname` la valeur bandit23, ou plus simplement, **exécuter la commande nous même**, dans le terminal:
 
 ```console
-bandit22@bandit:/etc/cron.d$ cat /tmp/8169b67bd894ddbb4412f91573b38db3
-Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+bandit22@bandit:~$ echo I am user bandit23
+I am user bandit23
+```
+
+Cela revient à assigner `bandit23` à la variable `myname`.
+
+```console
+bandit22@bandit:~$ echo I am user bandit23 | md5sum
+8ca319486bfbbc3663ea0fbe81326349  -
+```
+
+Maintenant on a la premiere partie de la commande, il nous manque le **cut**:
+
+```console
+bandit22@bandit:~$ echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+```
+
+Et voilà ! Il ne nous manque plus qu'à aller chercher notre mot de passe dans /tmp/`8ca319486bfbbc3663ea0fbe81326349` !
+
+```console
+bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 ```
 
 ---
-Mot de passe: **Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI**
+Mot de passe: **jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n**
