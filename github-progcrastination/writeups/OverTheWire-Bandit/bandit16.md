@@ -1,4 +1,4 @@
-  ## Over-The-Wire -writeup-
+## Over-The-Wire -writeup-
 ### Bandit16 (bandit16@bandit.labs.overthewire.org)
 
 ---
