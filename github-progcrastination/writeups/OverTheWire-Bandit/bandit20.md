@@ -4,12 +4,7 @@
 ---
 #### Etape 1
 
-Dans notre dossier se trouve un fichier `suconnect`.
-
-```console
-bandit20@bandit:~$ file suconnect 
-suconnect: setuid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=74c0f6dc184e0412b6dc52e542782f43807268e1, not stripped
-```
+Dans notre dossier se trouve un fichier `suconnect`. On sait également que le mot de passe sera donné si `suconnect` reçoit le mot de passe du niveau actuel.
 
 Quand on l'exécute, on a:
 
@@ -18,38 +13,59 @@ bandit20@bandit:~$ ./suconnect
 Usage: ./suconnect <portnumber>
 This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.
 ```
+Il va donc falloir mettre en place un **'listener'** avec netcat qui renverras le mot de passe actuel quand il y a une connexion entrante.
 
 ---
 #### Etape 2
 
-Il faut donc envoyer le mot de passe actuel à un port sur localhost, qui nous renverras le mot de passe du niveau suivant.  
-Scannons déjà les ports ouverts sur localhost !
+Tout d'abord regardons les ports ouverts, pour ne pas les dupliquer.
 
 ```console
 bandit20@bandit:~$ nmap localhost
 
-Starting Nmap 7.40 ( https://nmap.org ) at 2019-12-17 16:02 CET
+Starting Nmap 7.40 ( https://nmap.org ) at 2019-12-17 17:44 CET
 Nmap scan report for localhost (127.0.0.1)
-Host is up (0.00019s latency).
-Not shown: 998 closed ports
+Host is up (0.00023s latency).
+Not shown: 997 closed pbandit20@bandit:~$ ./suconnect 60000
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password
+orts
 PORT      STATE SERVICE
 22/tcp    open  ssh
+6025/tcp  open  x11
 30000/tcp open  ndmps
 
-Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
+Nmap done: 1 IP address (1 host up) scanned in 0.10 seconds
 ```
-
-On a donc le port 22 qui est ouvert.
 
 ---
 #### Etape 3
 
-Envoyons le mot de passe:
+On va prendre le port 60000 et créer un *listener*. L'option **-l** signifie *listen*, et **-p** signifie le *port*:
 
 ```console
-bandit20@bandit:~$ ./suconnect 22 | echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j
-GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+bandit20@bandit:~$ echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 60000
+|
+```
+ 
+Notre listener est mis en place, prêt à *echo* le mot de passe.  
+Maintenant il va falloir que `suconnect` se connecte dessus, autrement dit, ouvrir un second terminal, et se connecter.
+
+---
+#### Etape 4
+
+**Dans un nouveau terminal**:
+
+```console
+bandit20@bandit:~$ ./suconnect 60000
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password
 ```
 
 ---
-Mot de passe: **GbKksEFF4yrVs6il55v6gwY5aVje5f0j**
+`suconnect` à reçu le mot de passe, et indique qu'ils correspondent, puis envoie le prochain mot de passe.  
+Le mot de passe en question est envoyé sur le *listener* netcat que l'on a créé. Si on regarde sur notre premier terminal, on peut lire, à la suite de la ligne vide:
+> gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+---
+Mot de passe: **gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr**
