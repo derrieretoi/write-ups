@@ -47,7 +47,7 @@ On a donc le port 22 qui est ouvert.
 Envoyons le mot de passe:
 
 ```console
-bandit20@bandit:~$ ./suconnect 22 |echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+bandit20@bandit:~$ ./suconnect 22 | echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 ```
 
