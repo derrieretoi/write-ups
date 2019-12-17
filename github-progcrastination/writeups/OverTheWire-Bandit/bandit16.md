@@ -19,7 +19,6 @@ PORT      STATE    SERVICE
 31790/tcp open     unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 1.25 seconds
-bandit16@bandit:~$ 
 ```
 
 L'option **-p** demande un intervalle dans lequel `nmap` va chercher.  
