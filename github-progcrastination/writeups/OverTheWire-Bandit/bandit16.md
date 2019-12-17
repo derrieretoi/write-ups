@@ -73,4 +73,22 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 closed
 ```
 
-et on obtient une clé SSH privée.
+et on obtient une clé SSH privée.  
+Il faut utiliser cette clé pour se connecter en tant que **bandit17**, sauvegardons donc cette clé dans un fichier, par exemple **priv_key**.
+
+---
+#### Etape 4
+
+Avant toutes choses, si on essaie de se connecter avec `ssh -i priv_key bandit17@localhost`, il faut changer les permissions du fichier de la clé, avec `chmod 400 priv_key` tout simplement.
+
+---
+Désormais, on peut se connecter à **bandit17** sans problème
+
+---
+#### Etape 5
+
+Finalement, on regarde le mot de passe de **bandit17** dans `/etc/bandit_pass/bandit17`, qui nous donne:
+> xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+---
+Mot de passe: **xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn**
