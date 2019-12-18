@@ -15,3 +15,5 @@ The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
 ---
 Mot de passe: **IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR**
+
+[<< bandit9.md](bandit9.md) | bandit10.md | [bandit11.md >>](bandit11.md)
