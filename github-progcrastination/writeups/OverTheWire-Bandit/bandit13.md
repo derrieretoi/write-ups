@@ -30,3 +30,5 @@ bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
 
 ---
 Mot de passe: **4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e**
+
+[<< bandit12.md](bandit12.md) | bandit13.md | [bandit14.md >>](bandit14.md)
