@@ -23,3 +23,5 @@ On peut donc faire `cat inhere/.hidden`, qui nous donne:
 
 ---
 Mot de passe: **pIwrPrtPN36QITSp3EQaw936yaFoFgAB**
+
+[<< bandit2.md](bandit2.md) | bandit3.md | [bandit4.md >>](bandit4.md)
