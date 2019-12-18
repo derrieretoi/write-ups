@@ -100,7 +100,7 @@ Maintenant il ne nous reste plus qu'à aller modifier le fichier `/etc/bandit_pa
 
 Et bingo
 
-```
+```console
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
 ~                                                                                                                                                    
 ~                                                                                                                                                    
