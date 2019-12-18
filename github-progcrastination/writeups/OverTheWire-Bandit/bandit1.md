@@ -16,6 +16,4 @@ Il faut donc appeler le fichier par son chemin *absolu ou relatif*:
 ---
 Mot de passe: **CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9**
 
-[<< bandit0.md](bandit2.md)
-
-<p style="text-align: center">def 456</p>
+[<< bandit0.md](bandit0.md) | bandit1.md | [bandit2.md >>](bandit2.md)
