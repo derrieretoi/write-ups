@@ -33,10 +33,10 @@ Nous sommes déconnectés à chaque ouverture de session. Il va falloir regarder
 ---
 #### Etape 2
 
-Pour regarder ceci, on va afficher le contenu de `/etc/passwd` et examiner la ligne de **bandit26** avec `grep bandit26`:
+Pour regarder ceci, on va afficher le contenu de `/etc/passwd` et examiner la ligne de **bandit26** avec `grep`:
 
 ```console
-bandit25@bandit:~$ cat /etc/passwd | grep bandit26
+bandit25@bandit:~$ grep bandit26 /etc/passwd
 bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
 ```
 
