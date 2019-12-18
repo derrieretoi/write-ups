@@ -42,3 +42,5 @@ bandit9@bandit:~$ strings data.txt |grep '=='
 
 ---
 Mot de passe: **truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk**
+
+[<< bandit8.md](bandit8.md) | bandit9.md | [bandit10.md >>](bandit10.md)
