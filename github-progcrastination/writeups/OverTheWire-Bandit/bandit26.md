@@ -43,6 +43,6 @@ $ ./bandit27-do cat /etc/bandit_pass/bandit27
 ```
 
 ---
-Mot de passe: **/**
+Mot de passe: **3ba3118a22e93127a4ed485be72ef5ea**
 
 [<< bandit25.md](bandit25.md) | bandit26.md | [bandit27.md >>](bandit27.md)
