@@ -1,6 +1,6 @@
 ## Over-The-Wire -writeup-
 ### Bandit26 (bandit26@bandit.labs.overthewire.org)
-###### Aidé pour celui-ci
+###### /Tout petit peu/ Aidé pour celui-ci
 ---
 #### Etape 1
 
