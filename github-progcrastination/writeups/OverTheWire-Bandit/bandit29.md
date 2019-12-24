@@ -79,7 +79,7 @@ Allons voir ce que la branche *dev* contient
 ---
 #### Etape 3
 
-```
+```console
 bandit29@bandit:/tmp/visage/repo$ git pull origin dev
 
 [...]
