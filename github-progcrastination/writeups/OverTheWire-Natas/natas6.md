@@ -32,7 +32,7 @@ Structure de la commande pour récupérer un fichier: `wget http://target-addres
 Structure de la commande pour se connecter avec des identifiants: `wget --user [username] --password [password]`
 
 **Fusionnons les deux**:  
-`wget -user [username] --password [password] http://target-address/file`
+`wget --user [username] --password [password] http://target-address/file`
 
 **Enfin, dans notre cas, la commande exacte est**:  
 `wget --user natas6 --password aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1 http://natas6.natas.labs.overthewire.org/includes/secret.inc`
