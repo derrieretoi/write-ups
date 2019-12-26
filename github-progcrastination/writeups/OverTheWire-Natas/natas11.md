@@ -34,9 +34,9 @@ function xor_encrypt($in) {
 
 Pour retrouver, il faut appliquer l'encryption à l'envers, car XOR est commutatif.
 
-*// Draw the fucking owl*
-P xor K = C
-C xor K = P
+*// Draw the fucking owl*  
+P xor K = C  
+C xor K = P  
 P xor C = K
 
 On trouve donc la clé XOR: **"qw8J"**.
